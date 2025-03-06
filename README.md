@@ -1,4 +1,4 @@
-# Nairo React Personal Portfolio Template
+# Personal Portfolio 
 
 ## Description
 
@@ -28,6 +28,4 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration (vue-cli)
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
