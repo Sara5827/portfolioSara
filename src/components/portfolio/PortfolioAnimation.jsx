@@ -339,12 +339,20 @@ const PortfolioAnimation = () => {
                           {({ ref, open }) => (
                             <div className="gallery-link">
                               <img
+  src={process.env.PUBLIC_URL + "/" + val.img}
+  alt="Childhood"
+  role="button"
+  ref={ref}
+  onClick={open}
+/>
+
+                              {/* <img
                                 src={val.img}
                                 alt="Childhood"
                                 role="button"
                                 ref={ref}
                                 onClick={open}
-                              />
+                              /> */}
                             </div>
                           )}
                         </Item>

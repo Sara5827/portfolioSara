@@ -33,7 +33,7 @@ const News = () => {
         >
           <div className="blog-grid" onClick={toggleModalOne}>
             <div className="blog-img">
-              <img src={`img/blog/blog-4.jpg`} alt="blog post"></img>
+              <img  src={process.env.PUBLIC_URL + "/img/blog/blog-4.jpg"} alt="blog post"></img>
             </div>
             <div className="blog-info">
               <div className="meta">04/MAY/2023 - Sara</div>
@@ -55,7 +55,8 @@ const News = () => {
         >
           <div className="blog-grid" onClick={toggleModalTwo}>
             <div className="blog-img">
-              <img src={`img/blog/blog-2.jpg`} alt="blog post"></img>
+              <img src={process.env.PUBLIC_URL + "/img/blog/blog-2.jpg"} alt="blog post"></img>
+           
             </div>
             <div className="blog-info">
               <div className="meta">05/Oct/2024 - Sara</div>
@@ -84,7 +85,7 @@ const News = () => {
       >
         <div>
           <button className="close-modal" onClick={toggleModalOne}>
-            <img src="/img/cancel.svg" alt="close icon" />
+            <img src={process.env.PUBLIC_URL + "/img/cancel.svg"} alt="close icon" />
           </button>
           {/* End close icon */}
 
@@ -92,7 +93,7 @@ const News = () => {
             <div className="scrollable">
               <div className="blog-grid">
                 <div className="blog-img">
-                  <img src="img/blog/blog-4.jpg" alt="blog post"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/blog/blog-4.jpg"} alt="blog post"></img>
                 </div>
                 {/* End blog-img */}
                 <article className="article">
@@ -102,7 +103,7 @@ const News = () => {
                     </h2>
                     <div className="media">
                       <div className="avatar">
-                        <img src="img/testimonial/team-1.jpg" alt="thumbnail" />
+                        <img src={process.env.PUBLIC_URL + "/img/testimonial/team-1.jpg"} alt="thumbnail" />
                       </div>
                       <div className="media-body">
                         <label>Sara</label>
@@ -216,7 +217,7 @@ Previously, only one setState update was possible at a time and all the updates 
       >
         <div>
           <button className="close-modal" onClick={toggleModalTwo}>
-            <img src="/img/cancel.svg" alt="close icon" />
+            <img src={process.env.PUBLIC_URL + "/img/cancel.svg"} alt="close icon" />
           </button>
           {/* End close icon */}
 
@@ -224,7 +225,7 @@ Previously, only one setState update was possible at a time and all the updates 
             <div className="scrollable">
               <div className="blog-grid">
                 <div className="blog-img">
-                  <img src="img/blog/blog-2.jpg" alt="blog post"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/blog/blog-2.jpg"} alt="blog post"></img>
                 </div>
                 {/* End blog-img */}
                 <article className="article">
@@ -234,7 +235,7 @@ Previously, only one setState update was possible at a time and all the updates 
                     </h2>
                     <div className="media">
                       <div className="avatar">
-                        <img src="img/testimonial/team-2.jpg" alt="thumbnail" />
+                        <img src={process.env.PUBLIC_URL + "/img/testimonial/team-2.jpg"} alt="thumbnail" />
                       </div>
                       <div className="media-body">
                         <label>Sara</label>
