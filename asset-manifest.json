@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolioSara/static/css/main.e9a1b2bb.css",
-    "main.js": "/portfolioSara/static/js/main.1c7e37fb.js",
+    "main.js": "/portfolioSara/static/js/main.8dd43809.js",
     "static/js/27.d5170f56.chunk.js": "/portfolioSara/static/js/27.d5170f56.chunk.js",
     "static/media/et-line.svg": "/portfolioSara/static/media/et-line.3e441a4587befc7eeb4f.svg",
     "static/media/et-line.woff": "/portfolioSara/static/media/et-line.d59b23856f66f9876c47.woff",
@@ -15,6 +15,6 @@
   },
   "entrypoints": [
     "static/css/main.e9a1b2bb.css",
-    "static/js/main.1c7e37fb.js"
+    "static/js/main.8dd43809.js"
   ]
 }
