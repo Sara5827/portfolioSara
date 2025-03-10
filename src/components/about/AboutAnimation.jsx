@@ -18,7 +18,12 @@ const About = () => {
               <div className="about-me">
                 <div className="img">
                   <div className="img-in">
-                    <img src="img/about/about-me.jpg" alt="about" />
+                    {/* <img src="img/about/about-me.jpg" alt="about" /> */}
+                    <img
+  src={process.env.PUBLIC_URL + "/img/about/about-me.jpg"}
+  alt="about"
+/>
+
                   </div>
 
                   <Social />
