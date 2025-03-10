@@ -1,0 +1,90 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+https://www.starpneumatique.com/wp-admin/
+starPneumatique: wijdane.ouldjelloul@cpit.ma
+password: E1!(irKuMjK8@fZK
+
+
+walid
+Walid1995@
+Sara1995@.
+
+
+https://console.cloud.google.com/
+user: wijdane.ouldjelloul@cpit.ma
+password: Hardautoservices1234567
+* KeyHardAutoServices Map
+* KeyStartPneumatique Map
+* Key LoyaltyApp
+
+
+ const handleSignIn = async () => {
+    if (phone.length === 9) {
+      try {
+        const fcmToken = await messaging().getToken(); // Get the FCM token
+        const response = await signInUser(phone, password, fcmToken); // Pass the FCM token to signInUser
+
+        if (response.success) {
+          // Sign in successful
+          console.log(response.user);
+          setIsLoggedIn(true);
+          // Navigate to the home page
+          navigation.navigate("Home", {
+            phone,
+            password,
+          });
+        } else {
+          Alert.alert("Sign In Failed", response.message);
+        }
+      } catch (error) {
+        if (error.response) {
+          if (error.response.status === 401) {
+            Alert.alert("Sign In Failed", "Incorrect password, please try again.");
+          } else if (error.response.status === 404) {
+            Alert.alert("Sign In Failed", "Phone Number not found. Please Sign Up.");
+          } else {
+            console.error(error);
+            Alert.alert("Error", "An error occurred during sign in.");
+          }
+        } else {
+          console.error(error);
+          Alert.alert("Error", "An error occurred during sign in.");
+        }
+      }
+    } else {
+      Alert.alert("Invalid Phone Number", "Please enter a 9-digit phone number.");
+    }
+  };
+
+  useEffect(() => {
+    const unsubscribe = messaging().onMessage(async remoteMessage => {
+      // Handle foreground messages here
+      Alert.alert('A new FCM message arrived!', JSON.stringify(remoteMessage));
+    });
+
+    return unsubscribe; // Cleanup the listener on component unmount
+  }, []);
+
+
