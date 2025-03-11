@@ -310,7 +310,7 @@ const Portfolio = () => {
                           {({ ref, open }) => (
                             <div className="gallery-link">
                               <img
-                                src={val.img}
+                                  src={process.env.PUBLIC_URL + val.img}
                                 alt="Childhood"
                                 role="button"
                                 ref={ref}

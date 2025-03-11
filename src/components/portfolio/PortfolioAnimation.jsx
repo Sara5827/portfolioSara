@@ -12,7 +12,7 @@ const breakpointColumnsObj = {
   500: 1,
 };
 
-const tabList = ["All", "Branding", "Photography", "Fashion", "Product"];
+const tabList = ["All", "Mobil", "BackEnd", "FrontEnd", "Host"];
 const tabListContent = [
   {
     porftoliItems: [
@@ -331,8 +331,8 @@ const PortfolioAnimation = () => {
                         </div>
                         {/* End .portfolio-info */}
                         <Item
-                          original={val.img}
-                          thumbnail={val.img}
+                         original={process.env.PUBLIC_URL + val.img}  // Full-size image
+                         thumbnail={process.env.PUBLIC_URL + val.img} // Thumbnail image
                           width={val.width}
                           height={val.height}
                         >
